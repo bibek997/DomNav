@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book List Manager</title>
+    <link rel="stylesheet" href="dom.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="home">
+        <img src="./assests/image.png" alt="logo" />
+        <a href="#">Home</a>
+      </div>
+
+      <div class="menu-items">
+        <ul>
+          <li><a href="#" onclick="addBook()">Add Book</a></li>
+          <li>
+            <input
+              type="text"
+              id="search-bar"
+              placeholder="Search for a book"
+            />
+            <button onclick="searchBook()">Search</button>
+          </li>
+          <li><a href="#" onclick="removeBook()">Remove Last Book</a></li>
+          <li>
+            <a href="#" onclick="clearSearchHighlights()">Clear Highlights</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <ul id="book-list"></ul>
+    <script src="dom.js"></script>
+  </body>
+</html>
